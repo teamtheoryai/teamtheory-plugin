@@ -1,0 +1,12 @@
+{
+  "name": "teamtheory",
+  "version": "0.1.0",
+  "description": "Team Theory hiring workflows: build a role target (scorecard) and a Divide & Conquer interview plan, grounded in Team Theory methodology and your connected docs, transcripts and ATS.",
+  "author": {
+    "name": "Team Theory",
+    "url": "https://teamtheory.ai"
+  },
+  "homepage": "https://github.com/teamtheoryai/teamtheory-plugin",
+  "repository": "https://github.com/teamtheoryai/teamtheory-plugin",
+  "keywords": ["hiring", "scorecard", "interview-plan", "talent", "team-theory"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "teamtheory",
+  "owner": {
+    "name": "Team Theory"
+  },
+  "metadata": {
+    "description": "Team Theory hiring workflows for Claude."
+  },
+  "plugins": [
+    {
+      "name": "teamtheory",
+      "source": "./",
+      "description": "Team Theory hiring workflows: /target (role scorecard) and /interview-plan (Divide & Conquer interview plan)."
+    }
+  ]
+}

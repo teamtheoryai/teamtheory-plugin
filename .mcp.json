@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "team-theory": {
+      "type": "http",
+      "url": "https://mcp.teamtheory.ai/mcp"
+    }
+  }
+}
