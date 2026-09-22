@@ -1,7 +1,7 @@
 {
   "name": "team-theory",
   "displayName": "Team Theory",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Team Theory hiring workflows: build a role target (scorecard) and a Divide & Conquer interview plan, grounded in Team Theory methodology and your connected docs, transcripts and ATS.",
   "author": {
     "name": "Team Theory",
