@@ -12,7 +12,7 @@ Before anything else, orient the user in 1–2 sentences: you'll find the scorec
 Then follow the **divide-and-conquer** skill:
 
 1. Load the user's Team Theory preferences (`get_custom_instructions`).
-2. Retrieve the scorecard / target and company context — from this conversation, `~~cloud storage`, `~~knowledge base`, `~~ATS`, `~~meeting transcripts`, or `search_portfolio_knowledge`. If there is no scorecard, offer to run `/teamtheory:target` first.
+2. Retrieve the scorecard / target and company context — from this conversation, `~~cloud storage`, `~~knowledge base`, `~~ATS`, `~~meeting transcripts`, or `search_portfolio_knowledge`. If there is no scorecard, offer to run `/team-theory:target` first.
 3. Ask the setup questions in one message: number of interviewers, candidate experience base, company terminology, facets to emphasize. Wait for the answers.
 4. Create thematic clusters, grounded in `search_methodology_knowledge`.
 5. Generate questions for each cluster from the methodology question bank (one `search_methodology_knowledge` call per cluster).

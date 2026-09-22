@@ -1,6 +1,6 @@
 ---
 name: divide-and-conquer
-description: Build a Team Theory Divide & Conquer interview plan — split the scorecard's outcomes and competencies into thematic clusters, one per interviewer, with validated behavioral questions and follow-ups for each. Use when the user runs /teamtheory:interview-plan, says "divide and conquer", "interview plan", "split the interviews across the panel", or wants interview guides for multiple interviewers from a scorecard or target.
+description: Build a Team Theory Divide & Conquer interview plan — split the scorecard's outcomes and competencies into thematic clusters, one per interviewer, with validated behavioral questions and follow-ups for each. Use when the user runs /team-theory:interview-plan, says "divide and conquer", "interview plan", "split the interviews across the panel", or wants interview guides for multiple interviewers from a scorecard or target.
 user-invocable: false
 ---
 
@@ -22,11 +22,11 @@ Call `get_custom_instructions` and honor any preferences it returns in every lat
 
 The plan is built on a scorecard (target). Find it, in this order:
 
-1. **In the conversation** — a target from `/teamtheory:target` or a pasted scorecard.
+1. **In the conversation** — a target from `/team-theory:target` or a pasted scorecard.
 2. **Where the user pointed** — documents in `~~cloud storage` or `~~knowledge base`, the job in `~~ATS`, intake-call transcripts in `~~meeting transcripts`.
 3. **The org's own library** — `search_portfolio_knowledge` for the role's scorecard.
 
-Only search sources that are actually connected. If several candidates come back, confirm the right one with the user. If there is no scorecard anywhere, offer to run `/teamtheory:target` first — a plan without outcomes and competencies to cluster is guesswork.
+Only search sources that are actually connected. If several candidates come back, confirm the right one with the user. If there is no scorecard anywhere, offer to run `/team-theory:target` first — a plan without outcomes and competencies to cluster is guesswork.
 
 Distill the scorecard into its facets — each Key Result (R1, R2…) and Competency (CC1, RC1…) with a one-line definition — plus a short company brief (stage, ownership, industry, team, what makes the role hard).
 

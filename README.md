@@ -11,21 +11,21 @@ Team Theory turns that into a system. This plugin pulls the role context you alr
 ### 1. Role Target
 Defines the role before anyone meets a candidate. Pulls the job description or intake-call transcript you point to, searches Team Theory's methodology for scorecard best practices, and generates a target: the role's mission, the outcomes the hire must deliver, and the competencies that predict delivering them. Then offers to save it wherever your team works.
 
-**Slash Command:** `/teamtheory:target`
+**Slash Command:** `/team-theory:target`
 
 ```
-/teamtheory:target
-/teamtheory:target CFO for a PE-backed industrial services company, intake call in Granola from Tuesday
+/team-theory:target
+/team-theory:target CFO for a PE-backed industrial services company, intake call in Granola from Tuesday
 ```
 
 ### 2. Divide & Conquer Interview Plan
 Gives each interviewer a distinct slice of the target. Asks how many interviewers are in the loop, who's in the candidate pool, what terminology the company uses, and which facets matter most; clusters the target's outcomes and competencies into themes, one per interviewer; writes behavioral questions for each from Team Theory's question bank; then validates the full set for quality, redundancy and coverage. The final plan includes a facet coverage map, one guide per interviewer with questions and follow-ups, and a scoring table. Then offers to push it to your ATS as one interview kit per interviewer.
 
-**Slash Command:** `/teamtheory:interview-plan`
+**Slash Command:** `/team-theory:interview-plan`
 
 ```
-/teamtheory:interview-plan
-/teamtheory:interview-plan from the CFO target above, 4 interviewers
+/team-theory:interview-plan
+/team-theory:interview-plan from the CFO target above, 4 interviewers
 ```
 
 ### Built-in question discipline
@@ -58,11 +58,11 @@ These are native Claude integrations — no MCP connector install needed. They'r
 ## Quick Start
 
 1. Install the plugin:
-   - **Claude Code:** `/plugin marketplace add teamtheoryai/teamtheory-plugin`, then `/plugin install teamtheory@teamtheory`
+   - **Claude Code:** `/plugin marketplace add teamtheoryai/teamtheory-plugin`, then `/plugin install team-theory@team-theory`
    - **Cowork:** add this repository as a plugin
 2. Sign in to Team Theory when prompted, and connect any optional platforms you use
-3. Run `/teamtheory:target` with the role, and point Claude at the JD or intake call if you have one
-4. Run `/teamtheory:interview-plan` to split the target across your interview panel
+3. Run `/team-theory:target` with the role, and point Claude at the JD or intake call if you have one
+4. Run `/team-theory:interview-plan` to split the target across your interview panel
 5. Say yes when Claude offers to push the plan to your ATS — nothing is pushed, posted or shared without your explicit yes
 
 You can also just ask in plain words — "build a scorecard for the CFO role", "split the interviews across four people" — and the right workflow starts.
@@ -78,8 +78,8 @@ You can also just ask in plain words — "build a scorecard for the CFO role", "
 ├── LICENSE
 ├── README.md
 ├── commands/
-│   ├── target.md                    # /teamtheory:target
-│   └── interview-plan.md            # /teamtheory:interview-plan
+│   ├── target.md                    # /team-theory:target
+│   └── interview-plan.md            # /team-theory:interview-plan
 └── skills/
     ├── role-target/
     │   └── SKILL.md                 # Target (scorecard) workflow

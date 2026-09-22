@@ -1,5 +1,5 @@
 {
-  "name": "teamtheory",
+  "name": "team-theory",
   "owner": {
     "name": "Team Theory"
   },
@@ -8,10 +8,10 @@
   },
   "plugins": [
     {
-      "name": "teamtheory",
+      "name": "team-theory",
       "displayName": "Team Theory",
       "source": "./",
-      "description": "Team Theory hiring workflows: /teamtheory:target (role scorecard) and /teamtheory:interview-plan (Divide & Conquer interview plan)."
+      "description": "Team Theory hiring workflows: /team-theory:target (role scorecard) and /team-theory:interview-plan (Divide & Conquer interview plan)."
     }
   ]
 }

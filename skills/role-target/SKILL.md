@@ -1,6 +1,6 @@
 ---
 name: role-target
-description: Create a role target (Team Theory scorecard) — Mission, Outcomes, Competencies — from a job description, intake-call transcript, or whatever role context the user has. Use when the user runs /teamtheory:target, says "create a target", "build a scorecard", "define the role", or shares a JD / intake call and wants the role defined.
+description: Create a role target (Team Theory scorecard) — Mission, Outcomes, Competencies — from a job description, intake-call transcript, or whatever role context the user has. Use when the user runs /team-theory:target, says "create a target", "build a scorecard", "define the role", or shares a JD / intake call and wants the role defined.
 user-invocable: false
 ---
 
