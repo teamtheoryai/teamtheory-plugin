@@ -9,8 +9,9 @@
   "plugins": [
     {
       "name": "teamtheory",
+      "displayName": "Team Theory",
       "source": "./",
-      "description": "Team Theory hiring workflows: /target (role scorecard) and /interview-plan (Divide & Conquer interview plan)."
+      "description": "Team Theory hiring workflows: /teamtheory:target (role scorecard) and /teamtheory:interview-plan (Divide & Conquer interview plan)."
     }
   ]
 }
