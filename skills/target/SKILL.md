@@ -10,7 +10,7 @@ The user invoked this with: $ARGUMENTS
 
 A **target** is a Team Theory scorecard: the role's mission, the outcomes (key results) the hire must deliver, and the competencies that predict delivering them. Team Theory generates the final document — never write the scorecard yourself.
 
-Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
+Connector categories below (`~~ATS`, `~~cloud storage`…) are placeholders for whatever tool the user has connected in that category; see [CONNECTORS.md](../../CONNECTORS.md). Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
 
 ## Step 0 — Preferences
 
@@ -20,8 +20,8 @@ Call `get_custom_instructions` and honor any preferences it returns (tone, langu
 
 If the user named or attached a job description, role brief, or intake call — in $ARGUMENTS or the conversation — retrieve it from whichever connected tools are available:
 
-- **Documents** (JD, role brief, org chart, board memo): Egnyte, SharePoint / OneDrive, Google Drive, Dropbox.
-- **Intake-call transcripts** (hiring manager / investor intake): Metaview, Granola.
+- **Documents** (JD, role brief, org chart, board memo): `~~cloud storage`, `~~knowledge base`, or the job posting in `~~ATS`.
+- **Intake-call transcripts** (hiring manager / investor intake): `~~meeting transcripts`.
 - **The org's own library**: `search_portfolio_knowledge` for prior scorecards or JDs for the same company or role.
 
 Rules:
@@ -51,7 +51,7 @@ Render the returned document exactly as the tool instructs (as a document/artifa
 
 ## Step 4 — Offer to push it elsewhere
 
-Look at which destination tools are connected (e.g. Google Drive, SharePoint / OneDrive, Egnyte, Dropbox, Notion, Slack, the ATS such as Ashby or Greenhouse, Metaview). Offer the connected ones only, in one short question, e.g. "Want me to save this to Google Drive or post it to the #cfo-search Slack channel?"
+Look at which destinations are connected: `~~cloud storage`, `~~knowledge base`, `~~ATS` (attach to the job), `~~chat`. Offer the connected ones only, in one short question, e.g. "Want me to save this to Google Drive or post it to the #cfo-search Slack channel?"
 
 - Never push, post, or share without an explicit yes and a named destination.
 - After pushing, reply with the link or location.

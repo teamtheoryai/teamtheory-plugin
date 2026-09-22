@@ -18,15 +18,11 @@ Claude Code:
 /plugin install teamtheory@teamtheory
 ```
 
-The plugin connects the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`); sign in with your Team Theory account when prompted.
+The plugin pre-configures the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`) plus optional connectors; sign in to each when prompted.
 
-## Optional connectors
+## Connectors
 
-The workflows use whichever of these are connected, and skip the rest:
-
-- **Documents:** Egnyte, SharePoint / OneDrive, Google Drive, Dropbox
-- **Intake-call transcripts:** Metaview, Granola
-- **Destinations / ATS:** Ashby, Greenhouse, Lever, Notion, Slack, and the document tools above
+Only Team Theory is required. Transcripts (Granola, Metaview, BrightHire), cloud storage (Google Drive, Box), knowledge base (Notion) and ATS (Ashby, Workable) are optional: the workflows use whatever is connected and skip the rest. See [CONNECTORS.md](CONNECTORS.md) for the categories, alternatives, and what each is used for.
 
 Nothing is pushed, posted or shared without your explicit yes.
 
@@ -35,7 +31,8 @@ Nothing is pushed, posted or shared without your explicit yes.
 ```
 .claude-plugin/plugin.json        plugin manifest
 .claude-plugin/marketplace.json   lets this repo be added as a marketplace
-.mcp.json                         Team Theory MCP server
+.mcp.json                         MCP servers (Team Theory + optional connectors)
+CONNECTORS.md                     connector categories and ~~placeholders
 skills/target/SKILL.md            /target
 skills/interview-plan/SKILL.md    /interview-plan
 ```

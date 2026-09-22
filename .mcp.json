@@ -3,6 +3,38 @@
     "team-theory": {
       "type": "http",
       "url": "https://mcp.teamtheory.ai/mcp"
+    },
+    "granola": {
+      "type": "http",
+      "url": "https://mcp.granola.ai/mcp"
+    },
+    "metaview": {
+      "type": "http",
+      "url": "https://mcp.metaview.ai/mcp"
+    },
+    "brighthire": {
+      "type": "http",
+      "url": "https://app.brighthire.ai/mcp/v1"
+    },
+    "google-drive-drivemcp": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "box": {
+      "type": "http",
+      "url": "https://mcp.box.com"
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "ashby": {
+      "type": "http",
+      "url": "https://mcp.ashbyhq.com/mcp/v1"
+    },
+    "workable": {
+      "type": "http",
+      "url": "https://mcp.workable.com/mcp"
     }
   }
 }

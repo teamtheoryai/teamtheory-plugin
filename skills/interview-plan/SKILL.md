@@ -10,7 +10,7 @@ The user invoked this with: $ARGUMENTS
 
 Divide & Conquer gives each interviewer a distinct slice of the scorecard, so the panel covers every facet once, with no two interviewers asking the same questions. Team Theory generates the final document — never write the plan document yourself.
 
-Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
+Connector categories below (`~~ATS`, `~~cloud storage`…) are placeholders for whatever tool the user has connected in that category; see [CONNECTORS.md](../../CONNECTORS.md). Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
 
 Steps 3–5 are working steps: do them in your own reasoning and tell the user only one line per step (e.g. "Creating thematic clusters from the scorecard."). Don't show cluster tables, drafts, or validation notes in chat.
 
@@ -23,7 +23,7 @@ Call `get_custom_instructions` and honor any preferences it returns in every lat
 The plan is built on a scorecard (target). Find it, in this order:
 
 1. **In the conversation** — a target from `/target` or a pasted scorecard.
-2. **Where the user pointed** — documents in Egnyte, SharePoint / OneDrive, Google Drive, or Dropbox; intake-call transcripts in Metaview or Granola.
+2. **Where the user pointed** — documents in `~~cloud storage` or `~~knowledge base`, the job in `~~ATS`, intake-call transcripts in `~~meeting transcripts`.
 3. **The org's own library** — `search_portfolio_knowledge` for the role's scorecard.
 
 Only search sources that are actually connected. If several candidates come back, confirm the right one with the user. If there is no scorecard anywhere, offer to run `/target` first — a plan without outcomes and competencies to cluster is guesswork.
@@ -92,9 +92,9 @@ Render the returned document exactly as the tool instructs (as a document/artifa
 
 ## Step 7 — Offer to push to the ATS
 
-Check which ATS or interview tools are connected (e.g. Ashby, Greenhouse, Lever, Workday, Metaview). Offer the connected ones in one short question, e.g. "Want me to add these as interview kits on the CFO job in Ashby, one per interviewer?"
+Check which `~~ATS` is connected (e.g. Ashby, Workable, Greenhouse). Offer the connected ones in one short question, e.g. "Want me to add these as interview kits on the CFO job in Ashby, one per interviewer?"
 
 - Never create or change anything in the ATS without an explicit yes and the specific job / interview stage confirmed.
 - Map one cluster to one interview (kit / stage), questions and follow-ups included, and the facets as its scorecard attributes where the ATS supports it.
 - After pushing, reply with links or locations. If a cluster couldn't be pushed, say which and why.
-- If no ATS is connected, offer the other connected destinations (Drive, SharePoint, Notion, Slack…) instead, or skip silently if there are none.
+- If no ATS is connected, offer the other connected destinations (`~~cloud storage`, `~~knowledge base`, `~~chat`) instead, or skip silently if there are none.
