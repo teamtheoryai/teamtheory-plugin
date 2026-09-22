@@ -2,7 +2,7 @@
   "mcpServers": {
     "team-theory": {
       "type": "http",
-      "url": "https://mcp.teamtheory.ai/mcp"
+      "url": "https://app.teamtheory.ai/mcp"
     },
     "granola": {
       "type": "http",

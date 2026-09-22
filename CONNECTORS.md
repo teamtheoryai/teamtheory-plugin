@@ -21,7 +21,7 @@ Only **Team Theory** is required. Every other category is optional: a workflow u
 
 ## What each category is used for
 
-| Placeholder | `/target` | `/interview-plan` |
+| Placeholder | `/teamtheory:target` | `/teamtheory:interview-plan` |
 |-------------|-----------|-------------------|
 | `~~Team Theory` | Scorecard methodology (`search_methodology_knowledge`), the org's prior scorecards (`search_portfolio_knowledge`), and the scorecard itself (`generate_document`) | Clustering, question-bank and validation methodology (`search_methodology_knowledge`), and the final plan (`generate_document`) |
 | `~~meeting transcripts` | Pull the intake call with the hiring manager or investor | Pull the intake call for company context and emphasis |

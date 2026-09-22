@@ -1,16 +1,16 @@
 ---
-name: interview-plan
-description: Build a Team Theory Divide & Conquer interview plan — split the scorecard's outcomes and competencies into thematic clusters, one per interviewer, with validated behavioral questions and follow-ups for each. Use when the user says "/interview-plan", "divide and conquer", "interview plan", "split the interviews across the panel", or wants interview guides for multiple interviewers from a scorecard or target.
-argument-hint: "[role and company, or where to find the scorecard / target]"
+name: divide-and-conquer
+description: Build a Team Theory Divide & Conquer interview plan — split the scorecard's outcomes and competencies into thematic clusters, one per interviewer, with validated behavioral questions and follow-ups for each. Use when the user runs /teamtheory:interview-plan, says "divide and conquer", "interview plan", "split the interviews across the panel", or wants interview guides for multiple interviewers from a scorecard or target.
+user-invocable: false
 ---
 
-# /interview-plan — Divide & Conquer interview plan
+# Divide & Conquer interview plan
 
-The user invoked this with: $ARGUMENTS
+> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
 Divide & Conquer gives each interviewer a distinct slice of the scorecard, so the panel covers every facet once, with no two interviewers asking the same questions. Team Theory generates the final document — never write the plan document yourself.
 
-Connector categories below (`~~ATS`, `~~cloud storage`…) are placeholders for whatever tool the user has connected in that category; see [CONNECTORS.md](../../CONNECTORS.md). Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
+Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://app.teamtheory.ai/mcp`).
 
 Steps 3–5 are working steps: do them in your own reasoning and tell the user only one line per step (e.g. "Creating thematic clusters from the scorecard."). Don't show cluster tables, drafts, or validation notes in chat.
 
@@ -22,11 +22,11 @@ Call `get_custom_instructions` and honor any preferences it returns in every lat
 
 The plan is built on a scorecard (target). Find it, in this order:
 
-1. **In the conversation** — a target from `/target` or a pasted scorecard.
+1. **In the conversation** — a target from `/teamtheory:target` or a pasted scorecard.
 2. **Where the user pointed** — documents in `~~cloud storage` or `~~knowledge base`, the job in `~~ATS`, intake-call transcripts in `~~meeting transcripts`.
 3. **The org's own library** — `search_portfolio_knowledge` for the role's scorecard.
 
-Only search sources that are actually connected. If several candidates come back, confirm the right one with the user. If there is no scorecard anywhere, offer to run `/target` first — a plan without outcomes and competencies to cluster is guesswork.
+Only search sources that are actually connected. If several candidates come back, confirm the right one with the user. If there is no scorecard anywhere, offer to run `/teamtheory:target` first — a plan without outcomes and competencies to cluster is guesswork.
 
 Distill the scorecard into its facets — each Key Result (R1, R2…) and Competency (CC1, RC1…) with a one-line definition — plus a short company brief (stage, ownership, industry, team, what makes the role hard).
 

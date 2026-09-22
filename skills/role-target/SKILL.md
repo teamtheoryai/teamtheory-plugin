@@ -1,16 +1,16 @@
 ---
-name: target
-description: Create a role target (Team Theory scorecard) — Mission, Outcomes, Competencies — from a job description, intake-call transcript, or whatever role context the user has. Use when the user says "/target", "create a target", "build a scorecard", "define the role", or shares a JD / intake call and wants the role defined.
-argument-hint: "[role and company, or where to find the JD / intake call]"
+name: role-target
+description: Create a role target (Team Theory scorecard) — Mission, Outcomes, Competencies — from a job description, intake-call transcript, or whatever role context the user has. Use when the user runs /teamtheory:target, says "create a target", "build a scorecard", "define the role", or shares a JD / intake call and wants the role defined.
+user-invocable: false
 ---
 
-# /target — Create a role target (scorecard)
+# Role target (scorecard)
 
-The user invoked this with: $ARGUMENTS
+> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
 A **target** is a Team Theory scorecard: the role's mission, the outcomes (key results) the hire must deliver, and the competencies that predict delivering them. Team Theory generates the final document — never write the scorecard yourself.
 
-Connector categories below (`~~ATS`, `~~cloud storage`…) are placeholders for whatever tool the user has connected in that category; see [CONNECTORS.md](../../CONNECTORS.md). Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://mcp.teamtheory.ai/mcp`).
+Tool names below are the Team Theory MCP tools (`search_methodology_knowledge`, `generate_document`, `get_custom_instructions`, `search_portfolio_knowledge`). Your client may prefix them (e.g. `mcp__team-theory__…`). If the Team Theory tools are not available, stop and tell the user to connect the Team Theory MCP server (`https://app.teamtheory.ai/mcp`).
 
 ## Step 0 — Preferences
 
@@ -18,7 +18,7 @@ Call `get_custom_instructions` and honor any preferences it returns (tone, langu
 
 ## Step 1 — Gather role context (only if the user pointed to it)
 
-If the user named or attached a job description, role brief, or intake call — in $ARGUMENTS or the conversation — retrieve it from whichever connected tools are available:
+If the user named or attached a job description, role brief, or intake call — in the request or the conversation — retrieve it from whichever connected tools are available:
 
 - **Documents** (JD, role brief, org chart, board memo): `~~cloud storage`, `~~knowledge base`, or the job posting in `~~ATS`.
 - **Intake-call transcripts** (hiring manager / investor intake): `~~meeting transcripts`.

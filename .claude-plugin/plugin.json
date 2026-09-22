@@ -8,5 +8,12 @@
   },
   "homepage": "https://github.com/teamtheoryai/teamtheory-plugin",
   "repository": "https://github.com/teamtheoryai/teamtheory-plugin",
-  "keywords": ["hiring", "scorecard", "interview-plan", "talent", "team-theory"]
+  "keywords": [
+    "hiring",
+    "scorecard",
+    "interview-plan",
+    "talent",
+    "team-theory"
+  ],
+  "license": "MIT"
 }
