@@ -54,7 +54,6 @@ These are native Claude integrations — no MCP connector install needed. They'r
 | Integration | Purpose |
 |-------------|---------|
 | **Slack** | Share the target or plan with the hiring team |
-| **Microsoft 365** | SharePoint and OneDrive documents; save targets and plans |
 
 ## Quick Start
 
